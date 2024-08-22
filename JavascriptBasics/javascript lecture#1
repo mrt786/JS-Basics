@@ -1,0 +1,86 @@
+object add/update/delete:
+    we can make a object that have multiple property. Each property have a key and a value 
+    we can acces the value by using obj.key or obj[key]
+
+    can add new key by giving him some value like that 
+    obj.key = "value" or value
+
+    delete it's property by
+    delete obj.key
+
+
+Multipe object:
+    we can make nested objects 
+    to access them by objname.objname.key
+
+Array of objects:
+    arrayName = [{obj1 key & value},{obj2 key & value},{obj3 key & value}...]
+    to access the value of a key
+
+    obj1[index].key
+
+Random Number:
+    math.Random() gives a number in range 0-1 but is inclusive
+
+    * the number by 10 to get the number in the range 0 - 9
+    then apply the 
+    math.floor()
+Functions:
+    # high order functions
+    we can pass functions to another functions as an argunment and from them we will call them. first we have to make them annonymous 
+    by assigning them to a variable 
+    let sum = function(a,b)
+    {
+        return a + b;
+    }
+    call it like this 
+    x = sum()
+
+    #  it can also return a function
+Methods:
+    for objects key: value = function there is no need to write function key word when we write as a method 
+    these methods cannot directly acces the key of an object 
+    for this we use this to access them
+     when we declare a global function in this case this refers to the window object
+
+window object:
+    brower ki window dikhana ka lia ye ata ha
+
+Try & Catch:
+    try ma test code likh do and catch wale ma catch(err) phir is err ko print kar do
+
+Arrow Functions:
+    can assign the variable or can be used for call backs i.e passing as an argunment in the function
+
+    const varName = (argunments) =>{function body} not neccessary to add parenthesis when there is a single argunment
+    if it has no argunments then it is compulsory to add parenthesis
+
+
+    if it is not performing calculations, not printing anything, or not calling another function then it returns the single statment implicitly without writing return statment
+    const multiply = (a,b) => (
+        a*b;
+    );
+    or 
+    const multiply = (a,b) => a*b;
+
+setTimeOut:
+    it is called the window function
+    setTimeOut(function, timeout) wheretime out is the time in milliseconds after which the function that is passed is called again
+    used for api calls and request/response
+    it executes only one time
+
+setInterval(Function,timeout)
+    call back again and again after a time
+    it's every call has an id i.e id = function
+    to stop it by:
+    clearInterval(id)
+
+This for Arrow functions:
+    in these function the this doesnot have a scope of it's caller object but it has the scope of it's parent
+    calling is same 
+    is ma jo call karta ha uska this hota ha like student aik object ha to us case ma student ka this window ho ga
+
+Normal function ka lia this hota ha jis na use call kia ho    
+
+
+    

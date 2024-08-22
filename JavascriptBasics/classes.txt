@@ -1,0 +1,5 @@
+classes have a constructor named as constructor have some arguments
+
+create the object by using new person(arguments)
+for inheritance we use extends keyword after the class name
+call the base constructor using the super() keyword

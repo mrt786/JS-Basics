@@ -1,0 +1,23 @@
+We can import export data from one file to another
+
+export default dataName we can import this by the name can assign
+like export default person
+import prs form'./filename.js'
+
+the second method is to export multiple form a file 
+export{components seperated by a comma}
+
+and import them from their origianl name like that syntax
+import{dataName} form './filename.js'
+use the exact name as defined in the export file
+
+We can make alias in this case by using the as word
+
+import {person as prs} from''
+
+
+or to import everything from a file:
+import * as keyword from ''.
+use them like
+keyword.data = 
+

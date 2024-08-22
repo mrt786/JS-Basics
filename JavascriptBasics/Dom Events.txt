@@ -1,0 +1,72 @@
+events:
+
+    in-line js bhi use kar sakta ha
+    button click (starts mostly with on)
+    onclick functions ko bhi de sakta ha
+
+
+    buttons ko jab hum 
+    btn.onclick = function assgin not call
+        is ma function name assgin karna ha function ko call nhi karna
+    
+    onmouseenter:
+        when the cursor enters in the area of the button
+
+    in sa at a time aik hi kam ho sakta ha
+
+addEventListener
+    function ma aik default argument ata ha event ka
+    we can call multiple function
+    element.addEventListener("event",callback)
+    event is click/drag/keyboard key
+    we can set multiple values for an element 
+    search multiple events from mdn
+
+    This in addEventListener::
+        object which calls it 
+        benefit:
+            multiple par hum aik hi event function call kar rahe ha
+            alehda sa nhi karna parega
+
+keyboard events:
+    code,key these are important
+
+Form events:
+    submit =  event
+    action par na jae to us ka lia ye function hota ha
+    event.preventDefault
+
+Data from forms:
+    we cannot take data like input.innertext
+    ye alehda tareeqa sa store hoti ha 
+    value property
+    forms ma id bhi rakh sakta ha our value id ka through bhi a sakti ha
+    
+    forms sa direct bhi le sakta ha 
+    forms.elements it will give the element like a form has input area, button
+    is ma document.queryselector llikhna ki zaroorat nhi hoti
+
+Change Event:
+    event = change
+    only works for input , text area, select
+       kahe par bhi click kare ga to ye event call ho ga
+
+Input Event:
+    tracks for a small change
+    only works for input , text area, select
+    jab bhi koi value enter karta ha tab ye call hota ha like aik bhi key press kare tb ye event hota ha
+    arrow keys, non charater keys hoti ha tb nhi call hoti ha
+
+
+Event Bubbling:
+    jab aisa ho ka parent ma bhi koi event ho our uska child am bhi to jab child wala event ho ga call to parent
+    ka bhi ho ga
+    isko rokna ka lia event.stopPropagation() ye call back function ma likhe ga
+
+Event Delegation:
+    when new element add to the web page and the event is already called defined for the previous ones then the
+    event will not be called for this
+    if we want to apply then we use the event Delegation
+    we define the event listener for it's parent 
+    event.target tells which thing is clicked
+    event.target.nodeName tells us that which thing clicked 

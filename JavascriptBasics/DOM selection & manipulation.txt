@@ -1,0 +1,81 @@
+Document Object:
+    Body has a parent object named as document, evey element is node and an object also when we link js with 
+    html,css the document object is created
+    console.dir(objectname)
+
+Selection:
+    getelementbyid("idName")
+        we can store it in a variable if this id is found then return other wise null be store in the 
+
+    getelementbyclass("className"):
+        returns the collection of object. we can access their properties also
+        getelementbyclass("className")[index of the collection]:
+            return a specific index value
+        if class not found then the length will be zero
+
+    document.getelementbytagName(""):
+
+
+    query Selectors:
+        ONLY FOR THE SELECTION OF A SINGLE Object i.e the first one only if there is more than
+        document.querySelectors("tagname/#idName/.className")
+        infact we can write in this('css Selectors like className:nth of type(2n +1)')
+
+        to select the specific we use the following method:
+            document.querySelectors("class/id/element selected element")
+
+        for the whole collection:
+            document.querySelectorsAll("className/id/element element")
+
+Manipulation:
+    inner text(all the content shown on the screen), inner html(full markup of the content i.e styling), textContent(all the content that is hidden or not i.e display: none to nhi ha, new line  kaha ha):
+
+    Attributes(class, id, styling) Manipulation:
+    obj.getAttribute(attr)
+    obj.setAttribute(attr, value) if null then we can set
+
+    style:
+        for inline style only 
+        to access the individual property we can do this by getting the object and use obj.style
+        in js we use the camel Casing convention
+        obj.style.color  = 'green'
+
+
+Class List Property:
+    classList.add('className')
+    classList.remove('className')
+
+    NOTE:    when we use the set Attributes function it only set those class and removes the previously added classes
+
+    .contains('className') to check whether this class is present or not
+
+    .toggle:
+        is like a swtich that on or off
+        if a class exits, it will remove if not then it will add
+
+        returns true if not exits and false
+
+
+Navigation Property:
+    we can indirectly do style
+    object.parentElement
+    obj.children
+        it returns the collection we can access by using index
+    .childElementCount tells how many children of an element are 
+    .previousElementSibling or .nextElementSibling
+
+
+Add and Remove elements:
+    after creating we can append it one time 
+    .createElement('')
+    obj.appendChild() append in the object
+    append() we can append text to the element or a new element to the element
+    prepend() appends at the start
+
+    insertAdjacentElement('position',element):
+        beforebegin: before the target element
+        afterbegin:  append as the first child of the element
+        before end:  append as the last child of the element
+        after end:   after the target element
+        
+

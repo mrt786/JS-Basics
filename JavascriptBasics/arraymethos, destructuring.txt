@@ -1,0 +1,59 @@
+forEach:
+    arrayName.forEach(functionName/ function body)
+    the function have 1 argunment
+    if we return it will not store even with the return statement
+Map:
+    works same like forEach but it stores the element in the new Array and it'll be of the same size
+
+Every function:
+    it has some confition in the body and checks all of the values
+     in the and if any one of the case is false then it will save false
+    
+Some:
+    works same like Every if any one is true then it will return true
+Filter function:
+    some condition in it if it return true then it will be saved into the new array other wise it'll not
+
+Reducer function(accumulator , element):
+    first time  the value for accumulator is zero next time after performing an operation and next time the previous returned  value will 
+    be in the accumulator and last value it will be returned and saved as a Reduced value
+
+Spread:
+    instead of doing index we can use like this
+    (...arrayName)
+    to print all values individually 
+    console.log(...arrayName)
+    to convert a string into char array
+    arrayName = [..."string", ..."string2"] we can store multiple array
+    we can Spread the objects also
+
+Rest:
+    opposite to Spread
+    function(...args)
+    iska sath our argunments ko bhi likh sakta ha 
+    function(arg1, ...args ) left side par likhta ha right side par error
+
+Destructuring;
+    let names = ["rehan", "ali", "Ahsan" etc]
+
+    let [winner, runnerup,...others] = names[0]
+    objects can also be destructured
+
+objects Destructuring:
+    let student = {
+        name:"rehan",
+        age: 17,
+        password: 123,
+        userName: mrt786,
+    }
+
+
+    let {userName, password} = student
+    is case ma propery ko match kar ga our isma store karwa de ga
+    let {userName:user, password:secret} = student
+    objects ki property ka ilawa bhi hum kisi our variable ma store kar sakta ha 
+    we can also give default values if it is not in the objects
+    let {userName:user, password:secret,city = "kahuta"} = student
+    but if already define ha to phir us case ma original hi le ga
+        let {userName:user, password:secret,city:location = "kahuta"} = student
+        location variable ban jae ga

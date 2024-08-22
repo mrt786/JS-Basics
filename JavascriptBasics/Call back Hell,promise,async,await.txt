@@ -1,0 +1,72 @@
+Callback Hell:
+    when we have to store a data that is dependent on another what we do wo make our callback too long and in arguments we define another funtion
+    nesting of callbacks
+
+for this it creates ambiguity for us so we use promise, await,async
+
+Promise:
+    object represents the completion(success)or failure of a asynchronous operation and it's resulting value
+    resolve/fulfilled(success) and reject(failure), pending(jo kam tha wo poora nhi ho raha)
+
+Methods in Promise:
+    .then() fufil ho na ka bad koi kam perform karna ha & .catch() reject hona ka bad agar koi kam karna ha
+
+
+promise chaining:
+    multiple tries and a single catch. similarly we use in the then and catch
+
+Async functions:
+    they return by default a promise and we can use them with a normal functions even if it donot return something
+    if there is an error in the function then it will return rejected
+    throw it sends an error in the catch
+
+Await Keyword:
+    we only use in the async functions
+    ye kia karta ha jab tab iski call execute nhi hota tb tak aga nhi jae ga
+    if the promise are rejected then then execution below doesnot work
+
+    handling rejections:
+    jitna bhi code par hume shak ho ka us par error aye ga use hum try block ma likh deta ha  catch block ma error ko print kar deta ha
+    is sa ye ho ga ka promise jab reject ho ga to us sa neecha wala code execute kare ga
+
+JSON Response:
+    response is recieved in the form of a string
+    when the response is recieved it is in the form of the string 
+    JSON.parse(json/or the response that is recieved)
+        to parse string data into a JS object
+
+    JSON.stringify(js object) to convert the js object into the json object
+
+Test API's:
+    tools specifically for the browsers
+    postman: too old to use this we have to download
+    Hoppscoth:
+        online no need to download this and it is similar to the postman
+        Hoppscoth.io search and click the get you'll get teh json data
+
+
+AJAX:
+    request response from an API is known as ajax
+
+HTTP Verbs:
+    get, post something we want to delete, delete  something we want to delete
+
+Status codes:
+    200-OK all things are ok
+    404-not found the page which not exits
+    400-bad request
+    500-interval server error server ka end sa koi error a raha ho
+
+add information in url: 
+        variables ka through bhi pass karsakta, query string is some key value pair and from this we send some additional information
+    something that is not useful it will be ignored
+
+
+
+Our first request:
+    before fetch we are used to send this by xml http request object so many issues in this and async and promise method donot work
+    fetch(url) returns the promise
+
+Axios:
+    library to make http request
+    fetch ki jagah Axios
